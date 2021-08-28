@@ -1,13 +1,13 @@
 class hour():
     
-    def __init__(self, hh, mm, ss):
-        self.hour = hh
+    def __init__(self, hh, mm, ss,hh1,mm1,ss1):
+        self.houre = hh
         self.minute = mm
         self.second = ss
 
-        self.hour1 = hh
-        self.minute1 = mm
-        self.second1 = ss
+        self.hour1 = hh1
+        self.minute1 = mm1
+        self.second1 = ss1
         
     def sum(self):
         time ={}
@@ -71,17 +71,17 @@ class hour():
     def show(self):
         print(self.hour, ':', self.minute, ':', self.second)
 
-h_1 = int(input('please typr yore hour: '))
-m_1 = int(input('please typr yore minute: '))
-s_1 = int(input('please typr yore second: '))
+houre = int(input('please typr yore hour: '))
+minute = int(input('please typr yore minute: '))
+second = int(input('please typr yore second: '))
 
-h_2 = int(input('please typr yore hour1: '))
-m_2 = int(input('please typr yore minute1: '))
-s_2 = int(input('please typr yore second1: '))
+hour1 = int(input('please typr yore hour1: '))
+minute1 = int(input('please typr yore minute1: '))
+second1 = int(input('please typr yore second1: '))
 
     
-a = (h_1, m_1, s_1)
-b = (h_2, m_2, s_2)
+a = (houre, minute, second)
+b = (hour1,minute1,second1)
 
 c1 = a.sum(b)
 c1.show()
