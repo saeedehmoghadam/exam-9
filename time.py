@@ -11,9 +11,8 @@ class hour():
         
     def sum(self):
         time ={}
-        
         time.second = self.second + self.second1
-        time.minute = self.minute + self.minute1minute
+        time.minute = self.minute + self.minute1
         time.hour = self.hour + self.hour1
         
         if time.second >= 60:
@@ -72,17 +71,17 @@ class hour():
     def show(self):
         print(self.hour, ':', self.minute, ':', self.second)
 
-h_1 = int(input('Hour(1) = '))
-m_1 = int(input('Minute(1) = '))
-s_1 = int(input('Second(1) = '))
+h_1 = int(input('please typr yore hour: '))
+m_1 = int(input('please typr yore minute: '))
+s_1 = int(input('please typr yore second: '))
 
-h_2 = int(input('Hour(2) = '))
-m_2 = int(input('Minute(2) = '))
-s_2 = int(input('Second(2) = '))
+h_2 = int(input('please typr yore hour1: '))
+m_2 = int(input('please typr yore minute1: '))
+s_2 = int(input('please typr yore second1: '))
 
     
-a = time(h_1, m_1, s_1)
-b = time(h_2, m_2, s_2)
+a = (h_1, m_1, s_1)
+b = (h_2, m_2, s_2)
 
 c1 = a.sum(b)
 c1.show()
@@ -90,8 +89,8 @@ c1.show()
 c2 = a.sub(b)
 c2.show()
 
-c3 = a.timetosec()
+c3 = a.hour_to_sec()
 c3.show()
 
-c4 = c3.sectotime()
+c4 = c3.sec_to_hour()
 c4.show()
